@@ -24,9 +24,8 @@ app.get("/api", (req, res) => {
 
   // Get current UTC time
   const currentDate = new Date();
-  const currentUTCTime = new Date(
-    currentDate.getTime() - currentDate.getTimezoneOffset() * 60000
-  ).toISOString();
+  const currentUTCTime = currentDate.toISOString().replace(/\.\d{3}Z$/, "Z");
+
 
   // define urls
   const githubRepo = "https://github.com/Sorphy/hng-backend1";
