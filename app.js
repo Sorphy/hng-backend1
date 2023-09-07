@@ -30,7 +30,7 @@ app.get("/api", (req, res) => {
 
   // define urls
   const githubRepo = "https://github.com/Sorphy/hng-backend1";
-  const githubFile = "https://github.com/Sorphy/hng-backend1/master/app.js";
+  const githubFile = "https://https://github.com/Sorphy/hng-backend1/blob/master/app.js";
 
   const response = {
     slack_name: slackName,
